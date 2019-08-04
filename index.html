@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>PET SHOP</title>
+    
+     <link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<div id="home">
+		<ul>
+			<li><a href="#header"><i class="fas fa-home"></i></a></li>
+		</ul>	
+	</div>
+
+	<header id="header">
+		<h1>VETERINARIA</h1>
+		<figure>
+			<img src="images/pet_shop.svg" alt="logo">
+			<figcaption><a href="https://www.freepik.es/fotos-vectores-gratis/logo"></a></figcaption>
+		</figure>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#nostros">Acerca de...</a></li>
+			<li><a href="#productos">Servicios</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+		</ul>
+	</nav>
+
+	<div id="main">
+		<div class="parallax"></div>
+
+		<div id="nostros">
+			<aside>
+				<img src="images/pug.jpg" alt="nosotros">
+			</aside>
+
+			<section>
+				<h3>Sobre nosotros...</h3>
+				<p>Contamos con un staff que trabaja día a día con el compromiso de brindar un asesoramiento personalizado y eficiente para que disfrutes de una buena experiencia de compra.
+
+				Además ofrecemos los mejores precios y promociones para que puedas llevarte lo que necesites para tu mascota, y sino... ¡te lo conseguimos!
+
+				En la post-venta contamos con el respaldo para cubrir con todas las necesidades y solucionar cualquier inconveniente después de la compra de cualquier producto.
+
+				Por todas estas razones, a la hora de buscar alimento, atención y servicio, no des más vueltas, vení a Pet Shop.</p>
+			</section>
+		</div>
+
+		<div class="parallax"></div>
+
+		<div id="productos">
+			<div>
+				<h2><i class="fas fa-bone"></i> <b>Productos</b></h2>
+				<p>Pet Shop cuenta con una amplia variedad de productos para las mascotas, además del alimento balanceado de reconocidas marcas, tenemos productos de higiene y belleza, juguetes, correas, collares, comederos y transportadoras, entre otros.</p>
+			</div>
+
+			<div>
+				<h3><i class="fas fa-cut"></i> <b>Baño y Peluquería</b></h3>
+				<p>Pet Shop tiene las instalaciones necesarias para ofrecer un servicio de baño, estética, peinado y peluquería de alta calidad, en el cual se cuida cada detalle del proceso y se le da el mejor cuidado a la mascota. Se ofrece el servicio especial de cortes de raza e higiénicos.</p>
+			</div>
+
+			<div>
+				<h3><i class="fas fa-stethoscope"></i> <b>Veterinaria</b></h3>
+				<p>Pet Shop cuenta con profesionales altamente capacitados para la atención de su mascota, tanto en las visitas de prevención, vacunación, como en la primera atención en casos de urgencias, haciendo el seguimiento a las mascotas en su proceso de recuperación.</p>
+			</div>
+		</div>
+
+		<div class="parallax"></div>
+
+		<div id="contacto">
+			<form action="/my-handling-form-page" method="post">
+				
+				</form>
+				</div>
+				
+		</div>
+	
+
+	<div class="cuerpo">
+		<a href="http://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" class="icon"></a>
+		<a href="http://twitter.com/"><img src="images/gorjeo.png" alt="Twitter" class="icon"></a>
+		<a href="http://linkedin.com/"><img src="images/linkedin.png" alt="Linkedin" class="icon"></a>
+		<a href="http://pinterest.com/"><img src="images/pinterest.png" alt="Pinterest" class="icon"></a>
+		<a href="http://youtube.com/"><img src="images/youtube.png" alt="YouTube" class="icon"></a>
+	</div>
+
+	<footer>
+		<ul class="copyright">
+			<li>&copy; PET SHOP (2019)</li>
+			<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</footer>
+
+	<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		  var currentScrollPos = window.pageYOffset;
+		  if (prevScrollpos > currentScrollPos) {
+		    document.getElementById("home").style.top = "-100px";
+		  } else {
+		    document.getElementById("home").style.top = "0";
+		  }
+		  prevScrollpos = currentScrollPos;
+		}
+	</script>
+	
+		<div class="form">
+			<form action="guardar.php" method="POST">
+				<p>Nombre</p>
+				
+				<br>
+				<input type="text" name="nombre" placeholder="Nombre" required>
+				<p>Correo</p>
+				
+				<br>
+				<input type="email" name="correo" placeholder="alguien@algo.com" required>
+				<p>Mensaje</p>
+				
+				<br>
+				<textarea name="mensaje" placeholder="Mensaje" required></textarea>
+				<br>
+				<br>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+	</body>
+</html>
