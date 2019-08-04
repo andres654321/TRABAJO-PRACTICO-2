@@ -1,0 +1,288 @@
+.form{
+	position:relative;
+	width:500px;
+	height:600px;
+	padding-left: 20px;
+	padding-top: 15px;
+	background-color:#e5dfcd;
+	border-radius: 20px;
+	margin:auto;
+}
+html {
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+.parallax {
+    background-image: url('images/funny_akita.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p, a, form {
+	font-family: 'PT Sans', sans-serif;
+}
+
+#home {
+	position: fixed;
+	top: -100px;
+	right: 0;
+	transition: top 0.3s;
+}
+
+#home ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+}
+
+#home a {
+	text-decoration: none;
+	color: #077272;
+	font-size: 4em;
+	opacity: 0.75;
+	border: 1px solid #005656;
+	border-radius: 0.75em;
+	padding: 5px;
+}
+
+#home a:hover {
+	opacity: 1;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header h1 {
+	font-family: 'Modak', cursive;
+	font-size: 3em;
+}
+
+header figure {
+	display: flex;
+	flex-direction: column;
+}
+
+header figure img {
+	height: 300px;
+}
+
+header figure figcaption a {
+	text-decoration: none;
+	color: #077272;
+}
+
+header figure figcaption a:hover {
+	font-weight: bold;
+}
+
+nav {
+	border-radius: 15px;
+ 	background: #208C8C;
+ 	padding: 15px;
+ 	margin: 5px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: flex-start;
+	list-style-type: none;
+	font-family: 'PT Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	padding: 0.75em;
+	border: 1px solid #005656;
+	border-radius: 0.75em;
+	margin: 0.5em;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li:hover {
+	background: #005656;
+	border: white;
+}
+
+#nostros {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 375px;
+	background: #E7A424;
+	border-radius: 15px;
+ 	padding: 15px;
+ 	margin: 5px;
+}
+
+aside {
+	width: 20%;
+}
+
+aside img {
+	border-radius: 15px;
+	height: 90%;
+}
+
+section {
+	width: 20%;
+    border: 2px solid #BE810B;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+#productos {
+	height: 500px;
+	background: #E9AB35;
+	border-radius: 15px;
+ 	padding: 15px;
+ 	margin: 5px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+}
+
+#productos div h2, h3{
+	display: block;
+}
+
+#productos div {
+	background: #E7A424;
+	border-radius: 15px;
+ 	padding: 15px;
+ 	margin: 5px;
+ 	box-shadow: 5px 5px 2px #BE810B;
+}
+
+
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 1em;
+    border: 2px solid #BE810B;
+    border-radius: 1em;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #999;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+.button {
+    padding-left: 90px; 
+    margin: 0 auto;
+}
+
+button {
+    margin-left: .5em;
+}
+
+.cuerpo{
+    width:60px;
+    position:fixed;
+    z-index:1200;
+    top:70%;
+    right:-5px;
+}
+ 
+.icon{
+    transition:0.5s;
+	width:35px;
+	opacity: 0.7 ;
+}
+ 
+.icon:hover{
+    transform:translateX(-8px);
+}
+
+footer ul {
+	list-style: none;
+}
+
+input[type=text],[type=email]{
+	width:470px;
+	height:35px;
+	font: 14px normal normal uppercase helvetica, arial, serif;  
+}
+
+textarea{
+	width: 470px;
+	height: 110px;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+input[type=submit]{
+	position:relative;
+	width:150px;
+	height:40px;
+	border-radius:20px;
+	margin-left: 150px;
+	border:0px;
+	background-color:#32A43E;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+
+p{
+	text-shadow:0 1px 0 #fff;
+	font-size:24px;
+}
+
+label{
+	margin:11px 20px 0 0;
+	font-size:16 px;
+	color:#b3aba1;
+	text-transform: uppercase;
+	text-shadow:0px 1px 0px #fff;
+}
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Modak');
+
+@media (max-width: 700px) {
+	#nostros {
+	flex-direction: column !important;
+	height: 600px !important;
+	}
+	#productos {
+	height: 700px !important;
+	}
+	aside {
+	display: flex !important;
+	width: 90% !important;
+	justify-content: center !important;
+	}
+	section {
+		width: 90% !important;
+	}
+}
+
